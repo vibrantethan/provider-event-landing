@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="footer-inner">
         <div className="footer-brand">
           <a href="https://vibrant-wellness.com" target="_blank" rel="noreferrer">
-            <Image src="/assets/vw-logo.png" alt="Vibrant Wellness" width={140} height={38} style={{ height: 38, width: "auto" }} />
+            <Image src="/assets/vw-logo.png" alt="Vibrant Wellness" width={140} height={38} />
           </a>
           <p>Advanced specialty lab testing for integrative and functional providers. CLIA-certified, CAP-accredited, run in Santa Clara, California.</p>
         </div>

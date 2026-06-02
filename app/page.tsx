@@ -4,7 +4,6 @@ import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Panels from "@/components/Panels";
-import HowItWorks from "@/components/HowItWorks";
 import Credentials from "@/components/Credentials";
 import Testimonials from "@/components/Testimonials";
 import FormCTA from "@/components/FormCTA";
@@ -26,8 +25,7 @@ export default function Page() {
       <About />
       <Panels onJump={jump} />
       <section className="photo-strip" style={{ backgroundImage: "url('/assets/kit-flatlay.jpg')" }} />
-      <HowItWorks />
-      <Credentials />
+<Credentials />
       <Testimonials />
       <FormCTA onJump={jump} />
       <Footer />

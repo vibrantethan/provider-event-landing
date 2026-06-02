@@ -20,8 +20,8 @@ export default function Credentials() {
   return (
     <section className="section" id="trust">
       <div className="section-inner">
-        <span className="eyebrow">Why Providers Trust Us</span>
-        <h2 className="section-title">Lab-grade rigor you can stake your reputation on.</h2>
+        <span className="eyebrow">Our Accreditations</span>
+        <h2 className="section-title">Built on rigorous standards, recognized nationwide.</h2>
         <p className="section-lede">Every Vibrant panel runs in a single accredited facility in Santa Clara, California — not split across third-party vendors. Same lab, same methods, same provider-grade quality on every specimen.</p>
         <div className="cred-grid">
           {CREDS.map((c) => (

@@ -54,7 +54,7 @@ const PANELS = [
     name: "Immune Zoomer",
     blurb: "A whole-body immune evaluation spanning gut, neuro, musculoskeletal, vascular, and endocrine immunity — ideal for complex multi-system presentations and autoimmune workups.",
     tags: ["Autoimmunity", "Gut Immunity", "Neuroimmune"],
-    icon: "/assets/zoomers/immune-zoomer.svg",
+    icon: "/assets/zoomers/immune-zoomer.png",
   },
   {
     id: "food",

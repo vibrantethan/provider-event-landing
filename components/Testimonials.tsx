@@ -22,7 +22,7 @@ export default function Testimonials() {
       <div className="section-inner">
         <span className="eyebrow">What Providers Say</span>
         <h2 className="section-title">Trusted by providers across the country.</h2>
-        <p className="section-lede">Over 1,000 functional, integrative, and conventional providers rely on Vibrant Wellness to deliver the precision their patients need.</p>
+        <p className="section-lede">Thousands of functional, integrative, and conventional providers rely on Vibrant Wellness to deliver the precision their patients need.</p>
         <div className="testimonials-grid">
           {TESTIMONIALS.map((t) => (
             <div className="testimonial-card" key={t.name}>

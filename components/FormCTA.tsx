@@ -36,7 +36,7 @@ export default function FormCTA({ onJump }: FormCTAProps) {
               ))}
             </ul>
             <button className="btn-formcta" onClick={(e) => onJump(e, "form")}>
-              Partner With Us
+              Become a Provider
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M5 12h14" /><path d="m12 5 7 7-7 7" />
               </svg>
@@ -47,6 +47,7 @@ export default function FormCTA({ onJump }: FormCTAProps) {
               src="/assets/vw-unboxing.jpg"
               alt="Vibrant Wellness specimen collection kit"
               fill
+              sizes="(max-width: 860px) 100vw, 50vw"
               style={{ objectFit: "cover", objectPosition: "center" }}
             />
           </div>

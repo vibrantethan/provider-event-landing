@@ -1,56 +1,20 @@
-"use client";
-
-import { useEffect, useRef } from "react";
-
-declare global {
-  interface Window {
-    hbspt?: {
-      forms: {
-        create: (config: { portalId: string; formId: string; region: string; target: string }) => void;
-      };
-    };
-  }
-}
+import Script from "next/script";
 
 export default function ProviderForm() {
-  const containerRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const scriptId = "hs-forms-script";
-
-    const init = () => {
-      if (window.hbspt && containerRef.current) {
-        window.hbspt.forms.create({
-          portalId: "22446299",
-          formId: "PLACEHOLDER_FORM_ID", // ← replace with real HubSpot form ID
-          region: "na1",
-          target: "#hs-form-container",
-        });
-      }
-    };
-
-    if (document.getElementById(scriptId)) {
-      init();
-      return;
-    }
-
-    const script = document.createElement("script");
-    script.id = scriptId;
-    script.src = "//js.hsforms.net/forms/embed/v2.js";
-    script.charset = "utf-8";
-    script.type = "text/javascript";
-    script.onload = init;
-    document.head.appendChild(script);
-  }, []);
-
   return (
     <div className="form-card" id="form">
       <div className="form-card-bar" />
       <div className="form-card-head">
         <h3>Join the Vibrant Provider Network</h3>
-        <p className="sub">Fill out the form and our team will reach out within one business day.</p>
+        <p className="sub">Fill out the form and our team will reach out.</p>
       </div>
-      <div id="hs-form-container" ref={containerRef} />
+      <Script src="https://js.hsforms.net/forms/embed/22446299.js" strategy="lazyOnload" />
+      <div
+        className="hs-form-frame"
+        data-region="na1"
+        data-form-id="3108560c-85e9-49bc-95b8-2c01c051e749"
+        data-portal-id="22446299"
+      />
     </div>
   );
 }
